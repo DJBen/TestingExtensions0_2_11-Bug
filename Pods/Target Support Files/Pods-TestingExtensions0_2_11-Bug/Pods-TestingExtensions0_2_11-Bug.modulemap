@@ -1,0 +1,6 @@
+module Pods_TestingExtensions0_2_11_Bug {
+  umbrella header "Pods-TestingExtensions0_2_11-Bug-umbrella.h"
+
+  export *
+  module * { export * }
+}

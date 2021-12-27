@@ -1,0 +1,15 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LIBRARY_SEARCH_PATHS = $(inherited) "${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" "${PODS_CONFIGURATION_BUILD_DIR}/SnapshotTesting" "${PODS_CONFIGURATION_BUILD_DIR}/TestingExtensions" /usr/lib/swift
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/CombineRex/CombineRex.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/CombineRextensions/CombineRextensions.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SnapshotTesting/SnapshotTesting.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SwiftRex/SwiftRex.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/TestingExtensions/TestingExtensions.modulemap" -iframework "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"SnapshotTesting" -l"TestingExtensions" -framework "Combine" -framework "Foundation" -framework "SwiftUI" -framework "XCTest"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/CombineRex/CombineRex.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/CombineRextensions/CombineRextensions.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SnapshotTesting/SnapshotTesting.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/SwiftRex/SwiftRex.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/TestingExtensions/TestingExtensions.modulemap"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+PODS_XCFRAMEWORKS_BUILD_DIR = $(PODS_CONFIGURATION_BUILD_DIR)/XCFrameworkIntermediates
+SWIFT_INCLUDE_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CombineRex" "${PODS_CONFIGURATION_BUILD_DIR}/CombineRextensions" "${PODS_CONFIGURATION_BUILD_DIR}/SnapshotTesting" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftRex" "${PODS_CONFIGURATION_BUILD_DIR}/TestingExtensions"
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

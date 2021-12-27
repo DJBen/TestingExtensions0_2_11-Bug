@@ -1,0 +1,36 @@
+PODS:
+  - CombineRex (0.8.9):
+    - SwiftRex (~> 0.8.9)
+  - CombineRextensions (0.1.7):
+    - CombineRex (~> 0.8.6)
+  - SnapshotTesting (1.8.2)
+  - SwiftRex (0.8.9)
+  - TestingExtensions (0.2.11):
+    - CombineRex (~> 0.8.9)
+    - SnapshotTesting (~> 1.8.2)
+    - SwiftRex (~> 0.8.9)
+
+DEPENDENCIES:
+  - CombineRex (~> 0.8.8)
+  - CombineRextensions
+  - SwiftRex (~> 0.8.8)
+  - TestingExtensions
+
+SPEC REPOS:
+  trunk:
+    - CombineRex
+    - CombineRextensions
+    - SnapshotTesting
+    - SwiftRex
+    - TestingExtensions
+
+SPEC CHECKSUMS:
+  CombineRex: 204e28417c27fef95dd917ee1ca37ed91549a2a2
+  CombineRextensions: f334525cda6b04493782e80491b1aa45c4429f13
+  SnapshotTesting: 38947050d13960d57a4a9c166fcf51bca7d56970
+  SwiftRex: 77cb0bd1953a81e3b4ce92fb563a91ba9c297078
+  TestingExtensions: 75654c5acd46d63c09317cfa0c84f402882a29b0
+
+PODFILE CHECKSUM: 06e70e29ce2ec7d699f0479507aba3b6ffedaa4f
+
+COCOAPODS: 1.11.2

@@ -1,0 +1,6 @@
+module TestingExtensions {
+  umbrella header "TestingExtensions-umbrella.h"
+
+  export *
+  module * { export * }
+}
